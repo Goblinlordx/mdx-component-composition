@@ -29,7 +29,7 @@ jobs:
         run: npm i mdx-deck
 
       - name: Build
-        run: ./node_modules/.bin/mdx-deck build slides.mdx
+        run: npm run build
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
