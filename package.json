@@ -6,10 +6,14 @@
   "dependencies": {
     "@mdx-deck/themes": "^4.1.0",
     "mdx-deck": "^4.1.1",
-    "react": "^16.13.1"
+    "react": "^16.13.1",
+    "replace": "^1.2.0"
   },
   "devDependencies": {},
   "scripts": {
+    "build:deck": "mdx-deck build slides.mdx",
+    "build:post": "replace '<head>' '<head><base href=\"/mdx-component-composition/\">' public/index.html public/index.html",
+    "build": "npm run build:deck && npm run build:post",
     "start": "mdx-deck slides.mdx"
   },
   "repository": {
