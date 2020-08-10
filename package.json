@@ -1,0 +1,25 @@
+{
+  "name": "mdx-component-composition",
+  "version": "1.0.0",
+  "description": "",
+  "main": "slides.mdx",
+  "dependencies": {
+    "@mdx-deck/themes": "^4.1.0",
+    "mdx-deck": "^4.1.1",
+    "react": "^16.13.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "mdx-deck slides.mdx"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Goblinlordx/mdx-component-composition.git"
+  },
+  "author": "Ben Baldivia",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Goblinlordx/mdx-component-composition/issues"
+  },
+  "homepage": "https://github.com/Goblinlordx/mdx-component-composition#readme"
+}
