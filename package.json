@@ -4,12 +4,14 @@
   "description": "",
   "main": "slides.mdx",
   "dependencies": {
-    "spectacle-cli": "^0.6.2"
+    "css-loader": "^4.2.1",
+    "spectacle-cli": "^0.6.2",
+    "style-loader": "^1.2.1"
   },
   "devDependencies": {},
   "scripts": {
-    "build": "spectacle-cli --action build",
-    "start": "spectacle-cli -s"
+    "build": "spectacle-cli --theme theme.js --template template.js --action build",
+    "start": "spectacle-cli --theme theme.js --template template.js -s"
   },
   "repository": {
     "type": "git",
