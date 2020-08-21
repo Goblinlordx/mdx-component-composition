@@ -22,14 +22,14 @@ jobs:
         uses: actions/cache@v2
         with:
           path: node_modules
-          key: npm-${{ runner.os }}-${{ hashFiles('package-lock.json') }}
+          key: npm-${{ runner.os }}-${{ hashFiles('yarn.lock') }}
 
       - name: Install dependencies
         if: steps.cache-modules.outputs.cache-hit != 'true'
-        run: npm i
+        run: yarn
 
       - name: Build
-        run: npm run build
+        run: yarn build
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
