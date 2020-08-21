@@ -12,7 +12,7 @@
   "devDependencies": {},
   "scripts": {
     "build:deck": "mdx-deck build slides.mdx",
-    "build:post": "./node_modules/.bin/replace '<head>' '<head><base href=\"/mdx-component-composition/\">' public/index.html public/index.html",
+    "build:post": "./node_modules/.bin/replace '<head>' '<head><base href=\"/mdx-component-composition/\">' public/index.html",
     "build": "npm run build:deck && npm run build:post",
     "start": "mdx-deck slides.mdx"
   },
